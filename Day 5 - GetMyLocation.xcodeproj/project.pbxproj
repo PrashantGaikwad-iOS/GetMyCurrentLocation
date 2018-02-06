@@ -14,6 +14,8 @@
 		0D5C1A581FFF8C16004E7DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5C1A561FFF8C16004E7DE2 /* LaunchScreen.storyboard */; };
 		0D5C1A631FFF8C16004E7DE2 /* Day_5___GetMyLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C1A621FFF8C16004E7DE2 /* Day_5___GetMyLocationTests.swift */; };
 		0D5C1A6E1FFF8C16004E7DE2 /* Day_5___GetMyLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C1A6D1FFF8C16004E7DE2 /* Day_5___GetMyLocationUITests.swift */; };
+		0DF6B28720009BD50019E548 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DF6B28620009BCA0019E548 /* MapKit.framework */; };
+		0DF6B28920009F7B0019E548 /* ViewControllerMapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF6B28820009F7B0019E548 /* ViewControllerMapkit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		0D5C1A691FFF8C16004E7DE2 /* Day 5 - GetMyLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day 5 - GetMyLocationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5C1A6D1FFF8C16004E7DE2 /* Day_5___GetMyLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day_5___GetMyLocationUITests.swift"; sourceTree = "<group>"; };
 		0D5C1A6F1FFF8C16004E7DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D5C1A7C1FFF8E97004E7DE2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0DF6B28620009BCA0019E548 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0DF6B28820009F7B0019E548 /* ViewControllerMapkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMapkit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF6B28720009BD50019E548 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +87,7 @@
 				0D5C1A611FFF8C16004E7DE2 /* Day 5 - GetMyLocationTests */,
 				0D5C1A6C1FFF8C16004E7DE2 /* Day 5 - GetMyLocationUITests */,
 				0D5C1A4B1FFF8C16004E7DE2 /* Products */,
+				0D5C1A7B1FFF8E97004E7DE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +106,7 @@
 			children = (
 				0D5C1A4D1FFF8C16004E7DE2 /* AppDelegate.swift */,
 				0D5C1A4F1FFF8C16004E7DE2 /* ViewController.swift */,
+				0DF6B28820009F7B0019E548 /* ViewControllerMapkit.swift */,
 				0D5C1A511FFF8C16004E7DE2 /* Main.storyboard */,
 				0D5C1A541FFF8C16004E7DE2 /* Assets.xcassets */,
 				0D5C1A561FFF8C16004E7DE2 /* LaunchScreen.storyboard */,
@@ -123,6 +131,15 @@
 				0D5C1A6F1FFF8C16004E7DE2 /* Info.plist */,
 			);
 			path = "Day 5 - GetMyLocationUITests";
+			sourceTree = "<group>";
+		};
+		0D5C1A7B1FFF8E97004E7DE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DF6B28620009BCA0019E548 /* MapKit.framework */,
+				0D5C1A7C1FFF8E97004E7DE2 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF6B28920009F7B0019E548 /* ViewControllerMapkit.swift in Sources */,
 				0D5C1A501FFF8C16004E7DE2 /* ViewController.swift in Sources */,
 				0D5C1A4E1FFF8C16004E7DE2 /* AppDelegate.swift in Sources */,
 			);
@@ -369,6 +387,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -418,6 +437,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -429,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H28X75MLUY;
 				INFOPLIST_FILE = "Day 5 - GetMyLocation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leftrightmind.Day-5---GetMyLocation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H28X75MLUY;
 				INFOPLIST_FILE = "Day 5 - GetMyLocation/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leftrightmind.Day-5---GetMyLocation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
